@@ -11,7 +11,8 @@ git config user.name "$USER_NAME"
 git config user.email "$EMAIL"
 #git fetch --all && git checkout main
 
-brew install -y protobuf-compiler golang-goprotobuf-dev
+#sudo apt-get install -y protobuf-compiler golang-goprotobuf-dev
+brew install protobuf
 go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
 protoc --go_out=./golang --go_opt=paths=source_relative \
