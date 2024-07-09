@@ -2,8 +2,10 @@
 
 SERVICE_NAME=$1
 #RELEASE_VERSION=$2
-USER_NAME=$3
-EMAIL=$4
+#USER_NAME=$3
+#EMAIL=$4
+USER_NAME=$2
+EMAIL=$3
 
 git config user.name "$USER_NAME"
 git config user.email "$EMAIL"
